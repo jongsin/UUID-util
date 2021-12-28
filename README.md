@@ -2,7 +2,7 @@
 UUID Utility (Shorten)
 
 # Build
-  - go build -v -o ./cmd/... gouu
+  - go build -v -o gouu ./cmd/... 
 
 # UUID To Short UUID base58.FlickrAlphabet
   - gouu -l 483ca83c-677d-11ec-949d-42010a006010
