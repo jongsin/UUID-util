@@ -1,5 +1,5 @@
 # GoUU
-Go UUID Shorten - Revert
+Go UUID Shorten & Revert
 
 # Build
   - go build -v -o gouu ./cmd/... 
