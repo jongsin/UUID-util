@@ -9,14 +9,20 @@ import (
 )
 
 func main() {
-	fmt.Println("===========================")
-	fmt.Println("uuid - Shorten UUID v0.1.0")
-	fmt.Println("===========================")
+	fmt.Println("=============================================")
+	fmt.Println("gouu - UUID Shorten & Revert v0.1.0")
+	fmt.Println("=============================================")
 
 	shortVal := flag.String("s", "", "Shorten UUID Value")
 	uuidVal := flag.String("l", "", "Long UUID Value")
 
 	flag.Parse()
+
+	if *shortVal == "" && *uuidVal == "" {
+		fmt.Println("# Usage Example")
+		fmt.Println("gouu -s 9VnixksFfQgHYdE5ShW2jG")
+		fmt.Println("gouu -l 483ca83c-677d-11ec-949d-42010a006010")
+	}
 
 	if *shortVal != "" {
 		uid, err := ShortToLong(*shortVal)
